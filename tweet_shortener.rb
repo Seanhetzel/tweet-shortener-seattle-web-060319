@@ -21,5 +21,8 @@ def word_substituter(tweet)
     tweet.each do |word|
       if tweet.include?(long)
         word = short
+      end
+    end
+  end
   
 end
