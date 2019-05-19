@@ -16,4 +16,5 @@ end
 
 def word_substituter(tweet)
   shorten_words = shorten_words_hash
+  tweet.split
 end
