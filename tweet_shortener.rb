@@ -19,7 +19,7 @@ def word_substituter(tweet)
   tweet = tweet.split(" ")
   tweet.each do |word|
     if shorten_words.keys.include?(word)
-      tweet[word] = shorten_words[word]
+      word = shorten_words[word]
     end
   end
   tweet.join(" ")
