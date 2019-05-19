@@ -1,6 +1,6 @@
 # Write your code here.
 def dictionary
-  short_words = {
+  shorten_words_hash = {
     "hello" => "hi",
     "to" => "2",
     "two" => "2",
@@ -15,5 +15,5 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  
+  shorten_words = shorten_words_hash
 end
