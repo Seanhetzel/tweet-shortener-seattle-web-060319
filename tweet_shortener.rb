@@ -20,8 +20,8 @@ def word_substituter(tweet)
   tweet.each do |word|
     if shorten_words.keys.include?(word)
       #word = shorten_words[word]
-      #puts shorten_words[word]
-      puts word
+      puts shorten_words[word]
+      #puts word
     end
   end
   tweet.join(" ")
