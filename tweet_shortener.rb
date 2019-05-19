@@ -21,7 +21,7 @@ def word_substituter(tweet)
     if shorten_words.keys.include?(word)
       #word = shorten_words[word]
       #puts shorten_words[word]
-      puts tweet
+      puts word
     end
   end
   tweet.join(" ")
