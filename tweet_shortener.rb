@@ -15,11 +15,9 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  if tweet.kind_of?(Array)
-    tweet = tweet.split(" ")
-  end
   shorten_words = dictionary
   shorter_tweet = []
+  tweet = tweet.split(" ")
   tweet.each do |word|
     if shorten_words.keys.include?(word)
       shorter_tweet << shorten_words[word]
