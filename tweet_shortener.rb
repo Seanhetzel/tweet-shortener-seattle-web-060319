@@ -16,10 +16,13 @@ end
 
 def word_substituter(tweet)
   shorten_words = dictionary
+  shorter_tweet = []
   tweet = tweet.split(" ")
   tweet.each do |word|
     if shorten_words.keys.include?(word)
-      word = shorten_words[word]
+      shorter_tweet << shorten_words[word]
+    else
+      shorter_tweet << word
     end
   end
   tweet.join(" ")
